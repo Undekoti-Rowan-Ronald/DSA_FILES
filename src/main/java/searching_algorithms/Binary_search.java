@@ -1,5 +1,5 @@
 package searching_algorithms;
-
+//
 public class Binary_search {
 	
 	public int bs(int [] nums, int target) {
