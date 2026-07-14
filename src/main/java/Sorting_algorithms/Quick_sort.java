@@ -31,11 +31,11 @@ public class Quick_sort {
 	}
 
 	private static int partion(int[] nums, int low, int high) {
-		int piovt = nums[high];
+		int pivot = nums[high];
 		int i = low-1;
 		for (int j =low; j <high;j++) {
 //													int nums[]= {6,7,683,753,2,5686,3,34,76,34,35,8};
-			if (piovt>nums[j]) {
+			if (pivot>nums[j]) {
 				i++;
 				int temp = nums[j];
 				nums[j]= nums[i];
@@ -49,8 +49,8 @@ public class Quick_sort {
 		nums[high]=temp;
 		
 		
-		
-		return i+1;
+//		returning the new pivot position  
+		return i+1; 
 	}
 
 }
